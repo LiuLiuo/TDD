@@ -127,7 +127,6 @@ class NewVisitorTest(LiveServerTestCase):
         self.assertIn('Buy milk', page_text)
         
         #两个人都很满意，然后去休息了
-
     def test_layout_and_styling(self):
         # 乔伊访问首页
         self.browser.get(self.live_server_url)
@@ -139,6 +138,7 @@ class NewVisitorTest(LiveServerTestCase):
             512,
             delta=10
         )
+
         # 她新建了一个清单，看到输入框仍完美地居中显示
         inputbox.send_keys('testing')
         inputbox.send_keys(Keys.ENTER)
